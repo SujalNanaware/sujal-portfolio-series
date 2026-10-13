@@ -314,6 +314,104 @@ export const certifications: Certification[] = [
   },
 ];
 
+export type LeadershipRole = {
+  id: string;
+  org: string;
+  role: string;
+  type: 'club' | 'ngo';
+  icon: string; // emoji icon
+  color: string; // accent hex
+  description: string;
+  highlights: string[];
+};
+
+export const leadershipRoles: LeadershipRole[] = [
+  {
+    id: 'acm',
+    org: 'ACM Student Chapter',
+    role: 'Social Media Team — Core Member',
+    type: 'club',
+    icon: '⚡',
+    color: '#4cc9ff',
+    description:
+      'Active core member of the Association for Computing Machinery (ACM) Student Chapter, driving the chapter\'s digital presence and community outreach.',
+    highlights: [
+      'Manage social media strategy, content creation, and community engagement',
+      'Promote technical events, workshops, and hackathons to a wider student audience',
+      'Collaborate with a cross-functional team to grow the ACM chapter\'s online footprint',
+    ],
+  },
+  {
+    id: 'itsa',
+    org: 'ITSA — IT Students\' Association',
+    role: 'Social Media Team — Core Member',
+    type: 'club',
+    icon: '🚀',
+    color: '#b98bff',
+    description:
+      'Core member of ITSA, the department\'s flagship student body, responsible for amplifying departmental initiatives and student-driven activities.',
+    highlights: [
+      'Co-manage the association\'s social media handles across platforms',
+      'Create promotional and informational content for departmental events',
+      'Bridge communication between faculty, student body, and industry guests',
+    ],
+  },
+  {
+    id: 'sahayta',
+    org: 'Sahayta — Community Welfare Organisation',
+    role: 'Active Member',
+    type: 'ngo',
+    icon: '🤝',
+    color: '#46e3a8',
+    description:
+      'Volunteer member of Sahayta, a grassroots humanitarian organisation dedicated to feeding and supporting underprivileged communities in Pune.',
+    highlights: [
+      'Participate in regular food distribution drives to support the underprivileged',
+      'Assist in organising community welfare events and outreach programmes',
+      'Contribute to building a compassionate and socially responsible campus culture',
+    ],
+  },
+];
+
+export type Hobby = {
+  id: string;
+  name: string;
+  icon: string;
+  color: string;
+  note: string;
+};
+
+export const hobbies: Hobby[] = [
+  {
+    id: 'cricket',
+    name: 'Cricket',
+    icon: '🏏',
+    color: '#ffb547',
+    note: 'Regular recreational player — enjoys the sport for fun and fitness',
+  },
+  {
+    id: 'badminton',
+    name: 'Badminton',
+    icon: '🏸',
+    color: '#4cc9ff',
+    note: 'Played ZP-level matches during school — represented the school in inter-school district badminton competitions',
+  },
+  {
+    id: 'gym',
+    name: 'Gym & Fitness',
+    icon: '💪',
+    color: '#ff3d5a',
+    note: 'Dedicated gym-goer — building discipline, consistency and physical resilience',
+  },
+  {
+    id: 'reading',
+    name: 'Reading Books',
+    icon: '📚',
+    color: '#46e3a8',
+    note: 'Avid reader across technology, self-development and fiction genres',
+  },
+];
+
 export type Skill = { name: string; mono: string; note?: string };
 export type SkillCategory = { id: string; title: string; subtitle: string; skills: Skill[] };
 
